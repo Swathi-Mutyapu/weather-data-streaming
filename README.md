@@ -32,7 +32,7 @@ A **Consumer** listens to the topic, processes the data, and stores it into a **
 
 ## 📂 Project Structure
 ```bash
-data-streaming-pipeline/
+weather-data-streaming/
 ├── docker-compose.yml
 ├── kafka-producer/
 │   ├── Dockerfile
@@ -54,7 +54,7 @@ data-streaming-pipeline/
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/<your-github-username>/data-streaming-pipeline.git
+git clone https://github.com/<your-github-username>/weather-data-streaming.git
 cd weather-data-streaming
 ```
 
