@@ -15,7 +15,7 @@ This project demonstrates a complete **real-time data streaming pipeline** using
 - **PostgreSQL** as the data sink
 - **Docker Compose** to orchestrate the entire system
 
-Weather data is generated (mock or live) and published into a Kafka topic by a **Producer**.  
+Weather data is generated and published into a Kafka topic by a **Producer**.  
 A **Consumer** listens to the topic, processes the data, and stores it into a **PostgreSQL** database.
 
 ➡️ It's a simple but powerful example to understand the flow of data streaming end-to-end!
@@ -25,7 +25,7 @@ A **Consumer** listens to the topic, processes the data, and stores it into a **
 ## 🛠️ Technologies Used
 - **Apache Kafka** for real-time event streaming
 - **Python 3.8+** for Producer and Consumer scripts
-- **PostgreSQL 14** for persistent storage
+- **PostgreSQL** for persistent storage
 - **Docker & Docker Compose** for local orchestration
 
 ---
@@ -44,7 +44,7 @@ weather-data-streaming/
 │   └── requirements.txt
 ├── .env
 ├── postgres/
-│   └── (uses official postgres image, no custom code needed)
+│   └── (used for data persistency)
 └── README.md
 ```
 
@@ -93,7 +93,7 @@ The Producer is responsible for:
 - Formatting weather data into JSON messages
 - Publishing these messages to a Kafka topic (`weather`) at regular intervals
 
-This simulates real-world sensor data generation, similar to IoT devices or weather stations.
+This simulates real-world sensor data generation.
 
 ---
 
@@ -118,7 +118,6 @@ The `docker-compose.yml` file acts like the **heart** of the project:
 - It makes deployment **one-command simple** (no need to start each service manually)
 - It allows you to run a full microservice-style architecture **locally** with zero manual setup
 
-Without it, setting up Kafka + Zookeeper + Producer + Consumer + Postgres would be painful!
 
 ---
 
