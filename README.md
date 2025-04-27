@@ -44,7 +44,7 @@ weather-data-streaming/
 │   └── requirements.txt
 ├── .env
 ├── postgres/
-│   └── (used for data persistency)
+│   └── (used for data persistence)
 └── README.md
 ```
 
@@ -92,8 +92,6 @@ The Producer is responsible for:
 - Connecting to the Kafka broker
 - Formatting weather data into JSON messages
 - Publishing these messages to a Kafka topic (`weather`) at regular intervals
-
-This simulates real-world sensor data generation.
 
 ---
 
