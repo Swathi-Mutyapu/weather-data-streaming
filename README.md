@@ -112,9 +112,9 @@ This ensures that no data is lost and that every weather event is stored exactly
 
 The `docker-compose.yml` file acts like the **heart** of the project:
 - It defines services (Kafka, Zookeeper, Producer, Consumer, PostgreSQL)
-- It handles service **dependencies** (e.g., Kafka waits for Zookeeper)
-- It makes deployment **one-command simple** (no need to start each service manually)
-- It allows you to run a full microservice-style architecture **locally** with zero manual setup
+- It handles service dependencies (e.g., Kafka waits for Zookeeper)
+- It makes deployment one-command simple (no need to start each service manually)
+- It allows you to run a full microservice-style architecture locally with zero manual setup
 
 
 ---
